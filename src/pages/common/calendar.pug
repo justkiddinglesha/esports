@@ -1,0 +1,11 @@
+mixin calendar(days)
+    .calendar
+        ul.calendar__dates
+            each day in days
+                li(class="calendar__date calendar__date_" + day.time)
+                    p.calendar__date-text=day.date
+        .calendar__inner
+            .calendar__match-list
+                include match-list
+            .calendar__match
+                include match

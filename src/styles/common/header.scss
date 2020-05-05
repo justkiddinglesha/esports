@@ -1,0 +1,15 @@
+@import "../mixins/media";
+
+.header {
+  width: 100%;
+  background: $darkColor;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  @include media-tablet {
+    width: 100%;
+  }
+}

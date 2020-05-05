@@ -1,0 +1,13 @@
+@mixin font($font-family, $file-path, $weight, $style) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+  }
+}
+
+@include font('Akrobat', '../fonts/Akrobat-Regular', 400, normal)
+@include font('Akrobat', '../fonts/Akrobat-Bold', 600, normal)
+@include font('Akrobat', '../fonts/Akrobat-ExtraBold', 800, normal)

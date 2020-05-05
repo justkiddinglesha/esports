@@ -1,0 +1,45 @@
+.calendar {
+  &__dates {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid $bodyColor;
+  }
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    background: $streamColor;
+    padding: 10px;
+    border-right: 1px solid $bodyColor;
+    &_past {
+      border-bottom: 3px solid $dotaColor;
+    }
+    &_future {
+      border-bottom: 3px solid $primaryColor;
+    }
+  }
+  &__date-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__match-list {
+    width: 345px;
+    height: 390px;
+    background: $streamColor;
+    padding: 8px 18px 8px 8px;
+  }
+  &__match {
+    width: calc(100% - 345px);
+    height: 390px;
+    background: $darkColor;
+  }
+}

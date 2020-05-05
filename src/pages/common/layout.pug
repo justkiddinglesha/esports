@@ -1,0 +1,23 @@
+block variables
+include breadcrumbs
+
+doctype html
+html(lang="ru")
+    block head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="width-device-width, initial-scale=1" name="viewport")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+
+        link(rel="stylesheet" href="css/style.min.css")
+        script(src="https://kit.fontawesome.com/2017a721e4.js" crossorigin="anonymous")
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body(class=mode)
+        include header
+        +breadcrumbs(breadcrubbsLinks)
+        block content
+        include partners
+        include footer

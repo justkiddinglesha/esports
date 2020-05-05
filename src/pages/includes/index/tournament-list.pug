@@ -1,0 +1,12 @@
+mixin tournaments(list, className)
+    ul(class=className + ' ' + "tournaments-list")
+        each item in list
+            li.tournaments-list__item
+                .tournaments-list__image-wrapper
+                    img.tournaments-list__image(src=item.image_url, alt="")
+                .tournaments-list__text-wrapper
+                    a.tournaments-list__title(href=item.url)=item.title
+                    p.tournaments-list__description=item.description
+                    .tournaments-list__row
+                        include ../../common/date
+                        include ../../common/prize

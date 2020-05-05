@@ -1,0 +1,79 @@
+@import "../../../node_modules/normalize.css/normalize";
+@import '../untils/variables';
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Akrobat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: $bodyColor;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #fff;
+  margin: 0;
+}
+
+.link {
+  font-size: 18px;
+  line-height: 22px;
+  color: $lightText;
+  text-decoration: none;
+}
+
+.main {
+  .primary {
+    color: $primaryColor;
+  }
+  .btn {
+    font-size: 24px;
+    font-family: 'Akrobat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: #000;
+    display: inline-block;
+    padding: 14px 25px 16px;
+    background: $primaryColor;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.dota2 {
+  .primary {
+    color: $dotaColor;
+  }
+}
+
+.copyright {
+  color: $lightText;
+  margin: 2px 0 0;
+}

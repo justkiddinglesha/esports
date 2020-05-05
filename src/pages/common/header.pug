@@ -1,0 +1,18 @@
+include menu
+
+header.header
+    .header__inner
+        include logo
+        -
+            links = [
+            {title: 'Матчи', url: '/matches', iconClass: 'fad fa-swords'},
+            {title: 'Турниры', url: '/tournaments', iconClass: 'fad fa-trophy-alt'},
+            {title: 'Новости', url: '/news', iconClass: 'fad fa-book-open'},
+            {title: 'Команды', url: '/teams', iconClass: 'fad fa-users'},
+            {title: 'Игроки', url: '/gamers', iconClass: 'fad fa-user'},
+            {title: 'Ставки', url: '/bets', iconClass: 'fad fa-coins'},
+            {title: 'Видео', url: '/video', iconClass: 'fad fa-play-circle'}
+            ];
+        +menu(links)
+        a.link(href='/login.html') Вход
+        a.btn-grey(href='/reg.html') Регистрация

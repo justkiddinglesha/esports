@@ -1,0 +1,54 @@
+extends common/layout
+include common/title
+include common/calendar
+include includes/index/tournament-list
+
+block variables
+    - var mode = 'main'
+    - var title = "Esports Results home page"
+    - var breadcrubbsLinks = [{title: 'ER', href: '/'}, {title: 'Dota2', href: 'fdsfsdf'}];
+
+block content
+    .content
+        block about-us
+            include includes/index/about-us
+        .calendar-section
+            .container
+                .calendar-section__inner
+                    .calendar-section__title-wrapper
+                        +title('fad fa-calendar-star', 'Календарь матчей')
+                    -
+                        var days = [
+                            {date: '22 марта', time: 'past'}, {date: '23 марта', time: 'past'}, {date: '24 марта', time: 'past'},
+                            {date: '25 марта', time: 'future'}, {date: '26 марта', time: 'future'}, {date: '27 марта', time: 'future'},
+                            {date: '28 марта', time: 'future'}, {date: '29 марта', time: 'future'}, {date: '30 марта', time: 'future'},
+                            {date: '1 апреля', time: 'future'}, {date: '2 апреля', time: 'future'}, {date: '30 марта', time: 'future'}
+                        ];
+                    +calendar(days)
+        .tournaments
+            .container
+                .tournaments__inner
+                    .tournaments__column
+                        .tournaments__title-wrapper
+                            +title('fad fa-trophy-alt', 'Турниры по Dota2')
+                            a.link(href='https://esports-results.com/all-tournaments/') Полный список турниров
+                        -
+                            var list = [
+                                {title: 'WeSave! Charity Play', url: '/wesave.html', description: 'Благотворительный турнир', date: '20.03.2020', prize: '$120 000', image_url: '../img/wesave.jpg'},
+                                {title: 'Epic Challenger League Season 1 League Season 1', url: '/epic.html', description: 'Очень крутой турнир', date: '12.05.2020', prize: '$250 000', image_url: '../img/epic.jpg'},
+                                {title: 'WeSave! Charity Play', url: '/wesave.html', description: 'Благотворительный турнир', date: '20.03.2020', prize: '$120 000', image_url: '../img/wesave.jpg'},
+                                {title: 'Epic Challenger League Season 1', url: '/epic.html', description: 'Очень крутой турнир', date: '12.05.2020', prize: '$250 000', image_url: '../img/epic.jpg'}
+                            ];
+                        +tournaments(list, 'tournaments__list')
+                    .tournaments__column
+                        .tournaments__title-wrapper
+                            +title('fad fa-trophy-alt', 'Турниры по CS GO')
+                            a.link(href='https://esports-results.com/all-tournaments/') Полный список турниров
+                        -
+                            var list = [
+                                {title: 'DreamHack Madrid 2020', url: '/wesave.html', description: 'Благотворительный турнир', date: '20.03.2020', prize: '$120 000', image_url: '../img/dream.jpg'},
+                                {title: 'ESL One Cologne 2020', url: '/epic.html', description: 'Очень крутой турнир', date: '12.05.2020', prize: '$250 000', image_url: '../img/esl.jpg'},
+                                {title: 'DreamHack Madrid 2020', url: '/wesave.html', description: 'Благотворительный турнир', date: '20.03.2020', prize: '$120 000', image_url: '../img/dream.jpg'},
+                                {title: 'ESL One Cologne 2020', url: '/epic.html', description: 'Очень крутой турнир', date: '12.05.2020', prize: '$250 000', image_url: '../img/esl.jpg'}
+                            ];
+                        +tournaments(list, 'tournaments__list')

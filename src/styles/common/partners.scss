@@ -1,0 +1,17 @@
+.partners {
+  margin: 100px 0 0;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 0 25px;
+    margin: 0;
+    border-bottom: 1px solid $partners;
+  }
+  &__item {
+    .icon {
+      font-size: 2.8rem;
+      color: $partners;
+    }
+  }
+}

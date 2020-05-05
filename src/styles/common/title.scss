@@ -1,0 +1,56 @@
+.title {
+  display: flex;
+  &:before {
+    width: 15px;
+    height: 46px;
+    background: $primaryColorOpacity;
+    content: '';
+    display: block;
+    transform: skewX(-15deg);
+    margin-left: 7px;
+  }
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    content: '';
+    display: block;
+    width: calc(100% - 20px);
+    height: 1px;
+    background: $primaryColor;
+  }
+  &__icon-wrapper {
+    width: 50px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid $primaryColor;
+    border-right: none;
+    transform: skewX(-15deg);
+    margin-left: 3px;
+    > * {
+      transform: skewX(15deg);
+    }
+    svg {
+      font-size: 21px;
+      color: $primaryColor;
+    }
+  }
+  &__text-wrapper {
+    padding: 10px 20px 8px;
+    background: $primaryColor;
+    transform: skewX(-15deg);
+    > * {
+      transform: skewX(15deg);
+    }
+  }
+  &__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    margin: 0;
+  }
+}

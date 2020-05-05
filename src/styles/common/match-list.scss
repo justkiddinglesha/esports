@@ -1,0 +1,31 @@
+.match-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &__item {
+    background: $streamColor;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding: 10px;
+    &_dota {
+      background: linear-gradient(90deg, #3C4A5E 19.27%, rgba(48, 61, 80, 0.9048) 69.79%, rgba(53, 66, 84, 0.7) 100%), url('../img/dota-match.jpg') right center;
+      background-size: cover;
+    }
+    &_csgo {
+      background: linear-gradient(90deg, #3C4A5E 19.27%, rgba(48, 61, 80, 0.9048) 69.79%, rgba(53, 66, 84, 0.7) 100%), url('../img/csgo-match.jpg') right center;
+      background-size: cover;
+    }
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    svg {
+      font-size: 24px;
+      color: $lightText;
+    }
+  }
+}
