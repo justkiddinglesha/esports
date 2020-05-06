@@ -1,7 +1,7 @@
 mixin team(logo, tag, name, side)
     div(class="team team_" + side)
         .team__logo-wrapper
-            img.team__logo(src=logo)
+            img.team__logo(src=logo, alt='Логотип команды')
         .team__info
             p.team__info-tag=tag
             p.team__info-name=name

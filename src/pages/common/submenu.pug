@@ -1,0 +1,8 @@
+mixin submenu(links)
+    ul.submenu
+        each item in links
+            li.submenu__item
+                a.submenu__link(href=item.url)
+                    .submenu__icon-wrapper
+                        i(class=item.iconClass)
+                    span.submenu__link-text=item.title

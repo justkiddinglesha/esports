@@ -48,22 +48,41 @@ a {
 }
 
 .main {
+  background: $bodyColor url('../img/bg-main.png') no-repeat center top;
+  background-size: contain;
   .primary {
     color: $primaryColor;
   }
   .btn {
-    font-size: 24px;
-    font-family: 'Akrobat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    color: #000;
-    display: inline-block;
-    padding: 14px 25px 16px;
     background: $primaryColor;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  }
+  .btn-grey {
+    color: $primaryColor;
+  }
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Akrobat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 18px 12px;
+  &_big {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 14px 25px 16px;
+  }
+  &.btn-grey {
+    font-size: 18px;
+    line-height: 20px;
+    background: $menucolor;
+    padding: 10px 13px;
   }
 }
 
@@ -71,9 +90,16 @@ a {
   .primary {
     color: $dotaColor;
   }
+  .btn {
+    background: $dotaColor;
+  }
 }
 
 .copyright {
   color: $lightText;
   margin: 2px 0 0;
+}
+
+.content {
+  padding: 200px 0 0;
 }

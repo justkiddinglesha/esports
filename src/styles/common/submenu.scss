@@ -1,0 +1,42 @@
+.submenu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background: $menucolor;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  z-index: 10;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: 0.5s ease-in-out;
+  &__item {
+    transition: 0.3s linear;
+    &:hover {
+      background: $lightStreamColor;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    text-decoration: none;
+    svg {
+      font-size: 20px;
+      color: $primaryColor;
+    }
+  }
+  &__link-text {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 15px;
+  }
+  &__icon-wrapper {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -10,8 +10,14 @@ block variables
 
 block content
     .content
-        block about-us
-            include includes/index/about-us
+        .player-section
+            .container
+                .player-section__inner
+                    .player-section__title-wrapper
+                        +title('fad fa-camcorder', 'Стримы')
+                    .player-section__player-wrapper
+                        include common/player
+        include includes/index/about-us
         .calendar-section
             .container
                 .calendar-section__inner

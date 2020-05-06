@@ -1,7 +1,36 @@
-mixin menu(links)
-    ul.menu
-        each item in links
-            li.menu__item
-                a.menu__link(href=item.url)
-                    i(class=item.iconClass)
-                    span.menu__link-text=item.title
+include submenu
+include icon
+
+ul.menu
+    li.menu__item
+        a.menu__link(href='/dota2.html')
+            +icon('dota-menu')
+            span.menu__link-text Dota 2
+            +icon('angle-down-regular')
+        -
+            links = [
+            {title: 'Матчи', url: '/matches', iconClass: 'fad fa-swords'},
+            {title: 'Турниры', url: '/tournaments', iconClass: 'fad fa-trophy-alt'},
+            {title: 'Новости', url: '/news', iconClass: 'fad fa-book-open'},
+            {title: 'Команды', url: '/teams', iconClass: 'fad fa-users'},
+            {title: 'Игроки', url: '/gamers', iconClass: 'fad fa-user'},
+            {title: 'Ставки', url: '/bets', iconClass: 'fad fa-coins'},
+            {title: 'Видео', url: '/video', iconClass: 'fad fa-play-circle'}
+            ];
+        +submenu(links)
+    li.menu__item
+        a.menu__link(href='/csgo.html')
+            img.menu__link-icon(src='img/csgo-menu.png', alt='Логотип CS GO')
+            span.menu__link-text CS GO
+            +icon('angle-down-regular')
+        -
+            links = [
+            {title: 'Матчи', url: '/matches', iconClass: 'fad fa-swords'},
+            {title: 'Турниры', url: '/tournaments', iconClass: 'fad fa-trophy-alt'},
+            {title: 'Новости', url: '/news', iconClass: 'fad fa-book-open'},
+            {title: 'Команды', url: '/teams', iconClass: 'fad fa-users'},
+            {title: 'Игроки', url: '/gamers', iconClass: 'fad fa-user'},
+            {title: 'Ставки', url: '/bets', iconClass: 'fad fa-coins'},
+            {title: 'Видео', url: '/video', iconClass: 'fad fa-play-circle'}
+            ];
+        +submenu(links)

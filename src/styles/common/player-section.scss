@@ -1,0 +1,14 @@
+.player-section {
+  padding: 30px 0;
+  &__title-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__inner {
+    iframe {
+      width: 860px;
+      height: 484px;
+      border: none;
+    }
+  }
+}

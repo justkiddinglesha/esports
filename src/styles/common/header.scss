@@ -9,7 +9,19 @@
     justify-content: space-between;
     padding: 0 50px;
   }
-  @include media-tablet {
-    width: 100%;
+  &__login {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 30px;
+    .link__text {
+      margin: 0 7px 3px 0;
+    }
+    svg {
+      font-size: 19px;
+      color: $primaryColor;
+    }
   }
+  //@include media-tablet {
+  //  width: 100%;
+  //}
 }
