@@ -56,8 +56,105 @@ a {
   .btn {
     background: $primaryColor;
   }
-  .btn-grey {
+  .btn.btn-grey {
     color: $primaryColor;
+  }
+  .submenu__link svg {
+    color: $primaryColor;
+  }
+  .menu__link .icon-angle-down-regular {
+    color: $primaryColor;
+  }
+  .timezone__time-text~svg {
+    color: $primaryColor;
+  }
+  .language__current svg {
+    color: $primaryColor;
+  }
+  .match__bet-value {
+    color: $primaryColor;
+  }
+  .tournaments-list__item:hover .tournaments-list__title {
+    color: $primaryColor;
+  }
+  .socials__item-link:hover {
+    color: $primaryColor;
+  }
+  .title:before,
+  .title:after {
+    background: $primaryColorOpacity;
+  }
+  .title__icon-wrapper {
+    border: 1px solid $primaryColor;
+    svg {
+      color: $primaryColor;
+    }
+  }
+  .title__text-wrapper {
+    background: $primaryColor;
+  }
+}
+
+.dota {
+  .primary {
+    color: $dotaColor;
+  }
+  .btn {
+    background: $dotaColor;
+  }
+  .btn.btn-grey {
+    color: $dotaColor;
+  }
+  .submenu__link svg {
+    color: $dotaColor;
+  }
+  .menu__link .icon-angle-down-regular {
+    color: $dotaColor;
+  }
+  .timezone__time-text~svg {
+    color: $dotaColor;
+  }
+  .language__current svg {
+    color: $dotaColor;
+  }
+  .match__bet-value {
+    color: $dotaColor;
+  }
+  .tournaments-list__item:hover .tournaments-list__title {
+    color: $dotaColor;
+  }
+  .socials__item-link:hover {
+    color: $dotaColor;
+  }
+  .title:before,
+  .title:after {
+    background: $dotaColorOpacity;
+  }
+  .title__icon-wrapper {
+    border: 1px solid $dotaColor;
+    svg {
+      color: $dotaColor;
+    }
+  }
+  .title__text-wrapper {
+    background: $dotaColor;
+  }
+  .title__text {
+    color: #fff;
+  }
+  .news__item:hover .news__info-title {
+    color: $lightDotaColor;
+  }
+  .timetable__item:after {
+    width: 326px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    content: '';
+    background: url('../img/timetable-dota.jpg');
+    z-index: -1;
   }
 }
 
@@ -83,15 +180,7 @@ a {
     line-height: 20px;
     background: $menucolor;
     padding: 10px 13px;
-  }
-}
-
-.dota2 {
-  .primary {
-    color: $dotaColor;
-  }
-  .btn {
-    background: $dotaColor;
+    color: $lightText;
   }
 }
 
@@ -102,4 +191,14 @@ a {
 
 .content {
   padding: 200px 0 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__main {
+    width: 815px;
+  }
+  &__sidebar {
+    width: 340px;
+  }
 }

@@ -1,0 +1,40 @@
+extends common/layout
+include common/title
+include common/calendar
+include includes/index/tournament-list
+
+block variables
+    - var mode = 'dota'
+    - var title = "Esports Results Dota2 page"
+    - var breadcrubbsLinks = [{title: 'ER', href: '/'}, {title: 'Dota2', href: 'fdsfsdf'}];
+
+block content
+    .content
+        .player-section
+            .container
+                .player-section__inner
+                    .player-section__title-wrapper
+                        +title('fad fa-camcorder', 'Стримы')
+                    .player-section__player-wrapper
+                        include common/player
+        .banner-section
+            .container
+                .banner
+                    .banner__image-wrapper
+                        img.banner__image(src='img/banner.png', alt='Рекламный банер')
+                    a.banner__button(href='#') Начать обмениваться
+        .main-section
+            .container
+                .content__inner
+                    .content__main
+                        .timetable-section
+                            .timetable-section__title-wrapper
+                                +title('fad fa-swords', 'Расписание матчей Dota2')
+                            .timetable-section__timetable-wrapper.timetable
+                                include common/timetable
+                        .news-section
+                            .news-section__title-wrapper
+                                +title('fad fa-book-open', 'Новости')
+                            .news-section__news-wrapper.news
+                                include common/news
+                    .content__sidebar

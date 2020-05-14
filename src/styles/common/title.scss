@@ -3,7 +3,7 @@
   &:before {
     width: 15px;
     height: 46px;
-    background: $primaryColorOpacity;
+    background: $lightText;
     content: '';
     display: block;
     transform: skewX(-15deg);
@@ -17,7 +17,7 @@
     display: block;
     width: calc(100% - 20px);
     height: 1px;
-    background: $primaryColor;
+    background: $lightText;
   }
   &__icon-wrapper {
     width: 50px;
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    border: 1px solid $primaryColor;
+    border: 1px solid $lightText;
     border-right: none;
     transform: skewX(-15deg);
     margin-left: 3px;
@@ -35,12 +35,12 @@
     }
     svg {
       font-size: 21px;
-      color: $primaryColor;
+      color: $lightText;
     }
   }
   &__text-wrapper {
     padding: 10px 20px 8px;
-    background: $primaryColor;
+    background: $lightText;
     transform: skewX(-15deg);
     > * {
       transform: skewX(15deg);

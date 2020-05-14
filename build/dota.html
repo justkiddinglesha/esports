@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>Esports Results Dota2 page</title>
+  <meta content="width-device-width, initial-scale=1" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://kit.fontawesome.com/2017a721e4.js" crossorigin="anonymous"></script><!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  <body class="dota">
+    <header class="header">
+      <div class="header__inner">
+        <p class="logo">Esports<span class="primary">Results</span></p>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/dota2.html">
+                      <svg class="icon icon-dota-menu ">
+                        <use xlink:href="img/sprite.svg#dota-menu"></use>
+                      </svg><span class="menu__link-text">Dota 2</span>
+                      <svg class="icon icon-angle-down-regular ">
+                        <use xlink:href="img/sprite.svg#angle-down-regular"></use>
+                      </svg></a>
+                    <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link" href="/matches">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-swords"></i></div><span class="submenu__link-text">Матчи</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/tournaments">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-trophy-alt"></i></div><span class="submenu__link-text">Турниры</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/news">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-book-open"></i></div><span class="submenu__link-text">Новости</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/teams">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-users"></i></div><span class="submenu__link-text">Команды</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/gamers">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-user"></i></div><span class="submenu__link-text">Игроки</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/bets">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-coins"></i></div><span class="submenu__link-text">Ставки</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/video">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-play-circle"></i></div><span class="submenu__link-text">Видео</span></a></li>
+                    </ul>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="/csgo.html"><img class="menu__link-icon" src="img/csgo-menu.png" alt="Логотип CS GO"><span class="menu__link-text">CS GO</span>
+                      <svg class="icon icon-angle-down-regular ">
+                        <use xlink:href="img/sprite.svg#angle-down-regular"></use>
+                      </svg></a>
+                    <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link" href="/matches">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-swords"></i></div><span class="submenu__link-text">Матчи</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/tournaments">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-trophy-alt"></i></div><span class="submenu__link-text">Турниры</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/news">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-book-open"></i></div><span class="submenu__link-text">Новости</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/teams">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-users"></i></div><span class="submenu__link-text">Команды</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/gamers">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-user"></i></div><span class="submenu__link-text">Игроки</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/bets">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-coins"></i></div><span class="submenu__link-text">Ставки</span></a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="/video">
+                          <div class="submenu__icon-wrapper"><i class="fad fa-play-circle"></i></div><span class="submenu__link-text">Видео</span></a></li>
+                    </ul>
+          </li>
+        </ul>
+        <div class="timezone">
+          <div class="timezone__time"><i class="fas fa-clock"></i><span class="timezone__time-text">13:16 MSK</span><i class="far fa-angle-down"></i></div>
+          <ul class="timezone__list">
+            <li class="timezone__item">07:57  (UTC -12:00)</li>
+            <li class="timezone__item">08:57  (UTC -11:00)</li>
+            <li class="timezone__item">09:57  (UTC -10:00)</li>
+            <li class="timezone__item">10:57  (UTC -9:00)</li>
+            <li class="timezone__item">11:57 PST (UTC -8:00)</li>
+            <li class="timezone__item">12:57 PDT (UTC -7:00)</li>
+            <li class="timezone__item">13:57 CST (UTC -6:00)</li>
+            <li class="timezone__item">14:57 EST (UTC -5:00)</li>
+            <li class="timezone__item">15:57 EDT (UTC -4:00)</li>
+          </ul>
+        </div>
+        <div class="language">
+          <div class="language__current"><span class="language__current-text">RU</span><i class="far fa-angle-down"></i></div>
+          <ul class="language__list">
+            <li class="language__item">Русский</li>
+            <li class="language__item">English</li>
+          </ul>
+        </div><a class="link header__login" href="/login.html">Вход</a><a class="btn btn-grey" href="/reg.html">Регистрация</a>
+      </div>
+    </header>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">ER</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="fdsfsdf">Dota2</a></li>
+    </ul>
+    <div class="content">
+      <div class="player-section">
+        <div class="container">
+          <div class="player-section__inner">
+            <div class="player-section__title-wrapper">
+              <div class="title">
+                <div class="title__icon-wrapper"><i class="fad fa-camcorder"></i></div>
+                <div class="title__text-wrapper">
+                  <h2 class="title__text">Стримы</h2>
+                </div>
+              </div>
+            </div>
+            <div class="player-section__player-wrapper">
+              <div class="player">
+                <div class="player__iframe-wrapper">
+                  <iframe src="https://player.twitch.tv/?channel=dota2ruhub2&amp;parent=www.example.com"></iframe>
+                </div>
+                <ul class="player__menu">
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="player__item">
+                    <div class="player__item-icon-wrapper"><img class="player__item-icon" src="img/twitch-logo.png" alt="[RU] Dota2 Major"></div>
+                    <div class="player__item-info">
+                      <p class="player__item-info-title">RU Team Oracle vs ex-lowkey Cup Winter</p>
+                      <div class="player__item-row">
+                        <p class="player__item-viewers"><i class="fas fa-eye"></i>1020</p>
+                        <p class="player__item-channel">[RU] Dota2 Major</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <div class="banner">
+            <div class="banner__image-wrapper"><img class="banner__image" src="img/banner.png" alt="Рекламный банер"></div><a class="banner__button" href="#">Начать обмениваться</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="container">
+          <div class="content__inner">
+            <div class="content__main">
+              <div class="timetable-section">
+                <div class="timetable-section__title-wrapper">
+                  <div class="title">
+                    <div class="title__icon-wrapper"><i class="fad fa-swords"></i></div>
+                    <div class="title__text-wrapper">
+                      <h2 class="title__text">Расписание матчей Dota2</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="timetable-section__timetable-wrapper timetable">
+                  <ul class="timetable__list">
+                    <li class="timetable__item">
+                      <div class="timetable__image-wrapper"><img class="timetable__image" src="img/dreamhack.jpg" alt="DreamHack"></div>
+                      <div class="timetable__item-info">
+                        <div class="timetable__item-match">
+                                            <div class="team team_right">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/hr.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">HR</p>
+                                                <p class="team__info-name">HellRaisers</p>
+                                              </div>
+                                            </div>
+                          <p class="timetable__item-bet">1.69</p>
+                          <div class="timetable__icon-wrapper"><i class="fad fa-swords"></i></div>
+                          <p class="timetable__item-bet">1.69</p>
+                                            <div class="team team_left">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/liquid.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">TL</p>
+                                                <p class="team__info-name">Team Liquid</p>
+                                              </div>
+                                            </div>
+                        </div>
+                        <div class="timetable__item-extra"><i class="fad fa-play-circle"></i><span class="timetable__item-live">Live</span><span class="timetable__item-time">00:00</span>
+                          <button class="timetable__bet-button" type="button"><i class="fad fa-dice"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timetable__item">
+                      <div class="timetable__image-wrapper"><img class="timetable__image" src="img/epic-orig.jpg" alt="DreamHack"></div>
+                      <div class="timetable__item-info">
+                        <div class="timetable__item-match">
+                                            <div class="team team_right">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/hr.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">HR</p>
+                                                <p class="team__info-name">HellRaisers</p>
+                                              </div>
+                                            </div>
+                          <p class="timetable__item-bet">1.69</p>
+                          <div class="timetable__icon-wrapper"><i class="fad fa-swords"></i></div>
+                          <p class="timetable__item-bet">1.69</p>
+                                            <div class="team team_left">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/liquid.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">TL</p>
+                                                <p class="team__info-name">Team Liquid</p>
+                                              </div>
+                                            </div>
+                        </div>
+                        <div class="timetable__item-extra">
+                          <button class="timetable__info-button" type="button"><i class="fad fa-info-circle"></i></button><span class="timetable__item-live">Live</span><span class="timetable__item-time">12:10</span>
+                          <button class="timetable__bet-button" type="button"><i class="fad fa-dice"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timetable__item">
+                      <div class="timetable__image-wrapper"><img class="timetable__image" src="img/dreamhack.jpg" alt="DreamHack"></div>
+                      <div class="timetable__item-info">
+                        <div class="timetable__item-match">
+                                            <div class="team team_right">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/hr.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">HR</p>
+                                                <p class="team__info-name">HellRaisers</p>
+                                              </div>
+                                            </div>
+                          <p class="timetable__item-bet">1.69</p>
+                          <div class="timetable__icon-wrapper"><i class="fad fa-swords"></i></div>
+                          <p class="timetable__item-bet">1.69</p>
+                                            <div class="team team_left">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/liquid.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">TL</p>
+                                                <p class="team__info-name">Team Liquid</p>
+                                              </div>
+                                            </div>
+                        </div>
+                        <div class="timetable__item-extra"><i class="fad fa-play-circle"></i><span class="timetable__item-time">21 марта, 18:00</span>
+                          <button class="timetable__bet-button" type="button"><i class="fad fa-dice"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timetable__item">
+                      <div class="timetable__image-wrapper"><img class="timetable__image" src="img/dreamhack.jpg" alt="DreamHack"></div>
+                      <div class="timetable__item-info">
+                        <div class="timetable__item-match">
+                                            <div class="team team_right">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/hr.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">HR</p>
+                                                <p class="team__info-name">HellRaisers</p>
+                                              </div>
+                                            </div>
+                          <p class="timetable__item-bet">1.69</p>
+                          <div class="timetable__icon-wrapper"><i class="fad fa-swords"></i></div>
+                          <p class="timetable__item-bet">1.69</p>
+                                            <div class="team team_left">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/liquid.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">TL</p>
+                                                <p class="team__info-name">Team Liquid</p>
+                                              </div>
+                                            </div>
+                        </div>
+                        <div class="timetable__item-extra"><i class="fad fa-play-circle"></i><span class="timetable__item-time">21 марта, 18:00</span>
+                          <button class="timetable__bet-button" type="button"><i class="fad fa-dice"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timetable__item">
+                      <div class="timetable__image-wrapper"><img class="timetable__image" src="img/dreamhack.jpg" alt="DreamHack"></div>
+                      <div class="timetable__item-info">
+                        <div class="timetable__item-match">
+                                            <div class="team team_right">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/hr.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">HR</p>
+                                                <p class="team__info-name">HellRaisers</p>
+                                              </div>
+                                            </div>
+                          <p class="timetable__item-bet">1.69</p>
+                          <div class="timetable__icon-wrapper"><i class="fad fa-swords"></i></div>
+                          <p class="timetable__item-bet">1.69</p>
+                                            <div class="team team_left">
+                                              <div class="team__logo-wrapper"><img class="team__logo" src="img/liquid.png" alt="Логотип команды"></div>
+                                              <div class="team__info">
+                                                <p class="team__info-tag">TL</p>
+                                                <p class="team__info-name">Team Liquid</p>
+                                              </div>
+                                            </div>
+                        </div>
+                        <div class="timetable__item-extra"><i class="fad fa-play-circle"></i><span class="timetable__item-time">21 марта, 18:00</span>
+                          <button class="timetable__bet-button" type="button"><i class="fad fa-dice"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="news-section">
+                <div class="news-section__title-wrapper">
+                  <div class="title">
+                    <div class="title__icon-wrapper"><i class="fad fa-book-open"></i></div>
+                    <div class="title__text-wrapper">
+                      <h2 class="title__text">Новости</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-section__news-wrapper news">
+                  <ul class="news">
+                    <li class="news__item">
+                      <div class="news__image-wrapper"><img class="news__image" src="img/new-1.jpg" alt=""></div>
+                      <div class="news__info"><a class="news__info-title" href="#">
+                          SEA and NA crown champions for ESL One LA Online
+                          and it is very important news</a>
+                        <div class="news__item-row">
+                          <p class="user"><i class="fas fa-user"></i><span class="user__name">leeshqa</span></p>
+                          <p class="time"><i class="fas fa-clock"></i><span class="time__text">20 минут назад</span></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="news__item">
+                      <div class="news__image-wrapper"><img class="news__image" src="img/new-2.jpg" alt=""></div>
+                      <div class="news__info"><a class="news__info-title" href="#">
+                          OG Field Temporary Team For ESL One LA Online
+                          League</a>
+                        <div class="news__item-row">
+                          <p class="user"><i class="fas fa-user"></i><span class="user__name">leeshqa</span></p>
+                          <p class="time"><i class="fas fa-clock"></i><span class="time__text">20 минут назад</span></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="news__item">
+                      <div class="news__image-wrapper"><img class="news__image" src="img/new-2.jpg" alt=""></div>
+                      <div class="news__info"><a class="news__info-title" href="#">
+                          OG Field Temporary Team For ESL One LA Online
+                          League</a>
+                        <div class="news__item-row">
+                          <p class="user"><i class="fas fa-user"></i><span class="user__name">leeshqa</span></p>
+                          <p class="time"><i class="fas fa-clock"></i><span class="time__text">20 минут назад</span></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="news__item">
+                      <div class="news__image-wrapper"><img class="news__image" src="img/new-1.jpg" alt=""></div>
+                      <div class="news__info"><a class="news__info-title" href="#">SEA and NA crown champions for ESL One LA Online</a>
+                        <div class="news__item-row">
+                          <p class="user"><i class="fas fa-user"></i><span class="user__name">leeshqa</span></p>
+                          <p class="time"><i class="fas fa-clock"></i><span class="time__text">20 минут назад</span></p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content__sidebar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="container">
+        <ul class="partners__list">
+          <li class="partners__item">
+                <svg class="icon icon-dota_2 ">
+                  <use xlink:href="img/sprite.svg#dota_2"></use>
+                </svg>
+          </li>
+          <li class="partners__item">
+                <svg class="icon icon-encrypt ">
+                  <use xlink:href="img/sprite.svg#encrypt"></use>
+                </svg>
+          </li>
+          <li class="partners__item">
+                <svg class="icon icon-entercash ">
+                  <use xlink:href="img/sprite.svg#entercash"></use>
+                </svg>
+          </li>
+          <li class="partners__item">
+                <svg class="icon icon-paysafecard ">
+                  <use xlink:href="img/sprite.svg#paysafecard"></use>
+                </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info-wrapper">
+            <p class="logo">Esports<span class="primary">Results</span></p>
+            <p class="copyright">&copy;EsportsResults. Все права защищены</p>
+          </div>
+          <ul class="socials">
+            <li class="socials__item"><a class="socials__item-link" href="https://vk.com">
+                          <svg class="icon icon-vk ">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="socials__item"><a class="socials__item-link" href="https://vk.com">
+                          <svg class="icon icon-facebook ">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                          </svg></a></li>
+            <li class="socials__item"><a class="socials__item-link" href="https://vk.com">
+                          <svg class="icon icon-google ">
+                            <use xlink:href="img/sprite.svg#google"></use>
+                          </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

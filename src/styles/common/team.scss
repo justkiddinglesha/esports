@@ -1,7 +1,6 @@
 .team {
   display: flex;
   align-items: center;
-  width: calc((100% - 36px)/2);
   &_left {
     .team__logo-wrapper {
       margin-right: 8px;
